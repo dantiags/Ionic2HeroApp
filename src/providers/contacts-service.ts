@@ -18,6 +18,7 @@ export class ContactsService {
   getContactList() {
         var key:String = "c92a7b49060a9f9640e10134aa7654ea903c2fa3";
         var method:String = "get_contacts";
+
         let contacts = this.http.get(`http://clubster.aycron.com/api/${method}?auth_token=${key}`);
         return contacts;
     }
